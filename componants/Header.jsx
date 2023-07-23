@@ -1,25 +1,19 @@
 
 import React from 'react'
-import { FaBeer } from 'react-icons/fa';
+import '../src/App.css'
+import { TfiShoppingCart } from 'react-icons/tfi';
 
 function header() {
   return (
-    <div>
-      <h3> Lets go for a <FaBeer />? </h3>
-    </div>
+<div>
+  <div class='header'>
+      <h1>Fake Store</h1>
+      <h2><TfiShoppingCart /></h2>
+  </div>
+</div>
     
     
   )
 }
-class Question extends React.Component {
-  render() {
-    return <h3> Lets go for a <FaBeer />? </h3>
-  }
-  header() {
-    return (
-      <div>header</div>
-      
-    )
-  }
-}
+
 export default header; 
