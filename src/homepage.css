@@ -1,0 +1,18 @@
+button
+{
+    border: none;
+    background-color: white;
+    color: #5264C3;
+    font-size: 20 px;
+}
+
+.grid-container
+{
+    display: grid;
+}
+
+.grid-item
+{
+    height: 248px;
+    width: 183px;
+}
