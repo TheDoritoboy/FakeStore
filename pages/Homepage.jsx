@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 import '../src/homepage.css'
+import ItemCard from '../componants/ItemCards/ItemCard'
 function Homepage() {
 
     const [items, setItems] = useState([])
@@ -22,7 +23,8 @@ function Homepage() {
     <div>
         <div>
             {
-                items.map(thing => <p>{thing.title}</p>)
+                items.map(thing => <ItemCard key={thing.title} item={thing}/>)
+                //items.map(thing => <p key={thing.title}>{thing.title}</p>)
             }
         </div>
         <div>
