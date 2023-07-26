@@ -1,7 +1,19 @@
+import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 import '../src/homepage.css'
 function Homepage() {
 
+    useEffect(
+        ()=>{
+            axios.get('https://fakestoreapi.com/products')
+            .then(res =>{
+                console.log(res)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+        },[]
+        )
   return (
     <div>
         <div>
