@@ -3,11 +3,15 @@ import React, {useEffect, useState} from 'react'
 import '../src/homepage.css'
 function Homepage() {
 
+    const [items, setItems] = useState([])
+
     useEffect(
+
         ()=>{
             axios.get('https://fakestoreapi.com/products')
             .then(res =>{
-                console.log(res)
+                console.log(res.data)
+                setItems(res.data)
             })
             .catch(err =>{
                 console.log(err)
@@ -16,6 +20,11 @@ function Homepage() {
         )
   return (
     <div>
+        <div>
+            {
+                items.map(thing => <p>{thing.title}</p>)
+            }
+        </div>
         <div>
             <button>All</button>
             <button>Electronics</button>
