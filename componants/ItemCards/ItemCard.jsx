@@ -2,7 +2,9 @@ import React from 'react'
 import './ItemCard.css'
 function ItemCard(item) {
   return (
-    <div>ItemCard</div>
+    <div className='item-card'>
+      <p>{title.description}</p>
+      </div>
   )
 }
 

@@ -34,15 +34,7 @@ function Homepage() {
             <button>Men's Clothing</button>
             <button>Woman's Closthing</button>
         </div>
-        <div className='grid-container'>
-                <div className='grid-item'>
-                    <img src="" alt="" />
-                    <p className='name'></p>
-                    <p className='info'></p>
-                    <p className='price'></p>
-                </div>
 
-        </div>
 
 
     </div>
