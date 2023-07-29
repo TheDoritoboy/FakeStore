@@ -21,7 +21,7 @@ function Homepage() {
         )
   return (
     <div>
-        <div>
+        <div className='categories'>
             <button>All</button>
             <button>Electronics</button>
             <button>Jewelery</button>

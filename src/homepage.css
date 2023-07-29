@@ -7,6 +7,11 @@ button
     margin: 10px;
 }
 
+.categories
+{
+    padding-left: 150px;
+}
+
 .grid-container
 {
     display: grid;
