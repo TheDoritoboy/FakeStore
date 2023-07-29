@@ -6,7 +6,7 @@ import { TfiShoppingCart } from 'react-icons/tfi';
 function header() {
   return (
 <div>
-  <div class='header'>
+  <div className='header'>
       <h1>Fake Store</h1>
       <h2><TfiShoppingCart /></h2>
   </div>

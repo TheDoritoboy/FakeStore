@@ -1,0 +1,32 @@
+
+img
+{
+height: 153px;
+width: 151px;
+border: 1px black;
+}
+
+.category
+{
+font-size: 10px;
+color: #949494;
+}
+
+.title
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item-card
+{
+    width: 183px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10%;
+}
+
+
+

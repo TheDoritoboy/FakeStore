@@ -4,6 +4,7 @@ button
     background-color: white;
     color: #5264C3;
     font-size: 20 px;
+    margin: 10px;
 }
 
 .grid-container
@@ -15,4 +16,12 @@ button
 {
     height: 248px;
     width: 183px;
+}
+
+.card-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 131px 0 131px;
 }
