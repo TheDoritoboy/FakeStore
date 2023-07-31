@@ -4,7 +4,7 @@ function ItemCard({item}) {
   return (
     <div className='item-card'>
       <img src={item.image} alt="goods" />
-      <a href='/details' className='title'>{item.title}</a>
+      <a href= {`/details/${item.id}`} className='title'>{item.title}</a>
       <p className='category'>{item.category}</p>
       <p className='price'>${item.price}</p>
      </div>
