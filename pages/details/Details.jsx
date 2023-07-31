@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios'
+import './details.css'
 function Details() {
 
   const {itemId} =useParams()
@@ -29,7 +30,7 @@ function Details() {
         <p>{item?.title}</p>
         <p>${item?.price}</p>
         <p>Description</p>
-        <p>{item?.description}</p>
+        <p className='item-description'>{item?.description}</p>
         <button className='cart-add'>Add to Cart</button>
 
       </div>
