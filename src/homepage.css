@@ -1,3 +1,9 @@
+*
+{
+    background-color: #FAFAFA;
+
+}
+
 button
 {
     border: none;
@@ -29,4 +35,10 @@ button
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 131px 0 131px;
+}
+
+.big-boy
+{
+    margin-left: auto;
+    margin-right: auto;
 }

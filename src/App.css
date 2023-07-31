@@ -6,7 +6,7 @@ box-sizing: border-box;
 height: auto;
 width: auto;
 background-color: #FAFAFA;
-;
+
 }
 .header 
 {
@@ -15,4 +15,17 @@ justify-content: space-between;
 flex-direction: row;
 color: #3A4895;
 padding: 0 30px 70px 30px;
+}
+
+.home
+{
+    font-size: 24px;
+    color: #3A4895;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cart
+{
+    background-color: white;
 }

@@ -20,7 +20,7 @@ function Homepage() {
         },[]
         )
   return (
-    <div>
+    <div className='big-boy'>
         <div className='categories'>
             <button>All</button>
             <button>Electronics</button>

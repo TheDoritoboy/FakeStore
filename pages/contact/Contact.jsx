@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './Contact.css'
 function Contact() {
   return (
-    <div>
-        <h1>Contact Us</h1>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <button>Submit</button>
+    <div className='contact-container'>
+        <h1 className='contact-title'>Contact Us</h1>
+        <input className='name'  type="text" placeholder='First Name' />
+        <input className='name' type="text" placeholder='Last Name'/>
+        <input className='message' type="text" placeholder='Write your message here'/>
+        <button className='submit'>Submit</button>
     </div>
   )
 }

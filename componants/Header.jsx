@@ -7,8 +7,8 @@ function header() {
   return (
 <div>
   <div className='header'>
-      <h1>Fake Store</h1>
-      <h2><TfiShoppingCart /></h2>
+      <a className='home' href='/'>Fake Store</a>
+      <h2 className='cart'><TfiShoppingCart style={{backgroundColor: "#FAFAFA"}}/></h2>
   </div>
 </div>
     

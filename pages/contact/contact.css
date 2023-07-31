@@ -1,0 +1,56 @@
+
+
+.name
+{
+    height: 41px;
+    width: 292px;
+    background-color:#B4B4B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 20px;
+    text-align: center;
+    
+}
+
+.contact-title
+{
+    background-color: white;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+.message
+{
+    width: 292px;
+    height: 105px;
+    background-color:#B4B4B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 20px;
+    text-align: center;
+}
+.submit
+{
+    height: 41px;
+    width: 156px;
+    background-color: #5264C3;
+    color: white;
+}
+
+.contact-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 783px;
+    width: 863px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
