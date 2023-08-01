@@ -25,11 +25,11 @@ function Details() {
   )
   return (
     <div className='detail-container'>
-      <img src={item?.image} alt="Product" />
+      <img className='detail-img' src={item?.image} alt="Product" />
       <div className='container-info'>
-        <p>{item?.title}</p>
-        <p>${item?.price}</p>
-        <p>Description</p>
+        <p className='detail-item'>{item?.title}</p>
+        <p className='detail-price'>${item?.price}</p>
+        <p className='the-word-description'>Description</p>
         <p className='item-description'>{item?.description}</p>
         <button className='cart-add'>Add to Cart</button>
 

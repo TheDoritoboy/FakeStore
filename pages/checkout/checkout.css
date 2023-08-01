@@ -1,0 +1,34 @@
+.success
+{
+    height: 178px;
+    width: 528px;
+    margin: 110px 80px 57px 80px;
+    background-color: white;
+}
+
+.modal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.home-btn
+{
+    text-decoration: none;
+    height: 43px;
+    width: 158px;
+    background-color: #3A4895;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.inner-success
+{
+    padding: 10px 0 10px 0;
+    background-color: white;
+}
