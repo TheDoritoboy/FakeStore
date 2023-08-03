@@ -16,6 +16,15 @@ button
 .categories
 {
     padding-left: 150px;
+
+}
+
+.selector
+{
+    padding-right: 28px;
+    text-decoration: none;
+    color: #5264C3;
+    font-weight: 400;
 }
 
 .grid-container

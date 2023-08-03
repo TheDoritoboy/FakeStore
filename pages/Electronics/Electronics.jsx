@@ -1,15 +1,14 @@
+import React,{useEffect,useState} from 'react'
 import axios from 'axios'
-import React, {useEffect, useState} from 'react'
-import '../src/homepage.css'
-import ItemCard from './../componants/ItemCards/ItemCard';
-function Homepage() {
-
+import ItemCard from '../../componants/ItemCards/ItemCard'
+import './electronics.css'
+function Electronics() {
     const [items, setItems] = useState([])
 
     useEffect(
-
+    
         ()=>{
-            axios.get('https://fakestoreapi.com/products')
+            axios.get("https://fakestoreapi.com/products/category/electronics")
             .then(res =>{
                 console.log(res.data)
                 setItems(res.data)
@@ -19,10 +18,10 @@ function Homepage() {
             })
         },[]
         )
-  return (
+    return (
     <div className='big-boy'>
         <div className='categories'>
-            <a className='selector' href='/'>All</a>
+        <a className='selector' href='/'>All</a>
             <a className='selector' href='/electronics'>Electronics</a>
             <a className='selector'  href='/jewelery'>Jewelery</a>
             <a className='selector'  href='/man'>Men's Clothing</a>
@@ -35,12 +34,13 @@ function Homepage() {
                 //items.map(thing => <p key={thing.title}>{thing.title}</p>)
             }
         </div>
-
-
-
-
+    
+    
+    
+    
     </div>
-  )
-}
+    
+      )
+    }
 
-export default Homepage
+export default Electronics

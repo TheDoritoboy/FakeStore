@@ -1,15 +1,15 @@
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
-import '../src/homepage.css'
-import ItemCard from './../componants/ItemCards/ItemCard';
-function Homepage() {
+import ItemCard from '../../componants/ItemCards/ItemCard'
+import './WomanCloth.css'
+function WomanCloth() {
 
     const [items, setItems] = useState([])
 
     useEffect(
 
         ()=>{
-            axios.get('https://fakestoreapi.com/products')
+            axios.get("https://fakestoreapi.com/products/category/women's%20clothing")
             .then(res =>{
                 console.log(res.data)
                 setItems(res.data)
@@ -22,7 +22,7 @@ function Homepage() {
   return (
     <div className='big-boy'>
         <div className='categories'>
-            <a className='selector' href='/'>All</a>
+        <a className='selector' href='/'>All</a>
             <a className='selector' href='/electronics'>Electronics</a>
             <a className='selector'  href='/jewelery'>Jewelery</a>
             <a className='selector'  href='/man'>Men's Clothing</a>
@@ -43,4 +43,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default WomanCloth
