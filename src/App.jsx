@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState } from 'react'
 import './App.css'
-import Header from '../componants/header'
+import Header from './../componants/Header';
 import Homepage from '../pages/Homepage'
 import Footer from '../componants/Footer/Footer';
 import {BrowserRouter, Routes, Route,} from 'react-router-dom'
@@ -12,6 +12,7 @@ import Jewelry from '../pages/Jewelery/Jewelry';
 import Electronics from '../pages/Electronics/Electronics';
 import ManCloth from '../pages/ManCloth/ManCloth';
 import WomanCloth from '../pages/WomanCloth/WomanCloth';
+import header from './../componants/Header';
 Homepage
 function App() {
   const [count, setCount] = useState(0)

@@ -4,7 +4,7 @@ import '../src/App.css'
 import { TfiShoppingCart } from 'react-icons/tfi';
 
 
-function header() {
+function Header() {
   return (
 <div>
   <div className='header'>
@@ -17,4 +17,4 @@ function header() {
   )
 }
 
-export default header; 
+export default Header; 
