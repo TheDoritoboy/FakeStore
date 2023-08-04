@@ -5,6 +5,8 @@ height: 153px;
 width: 151px;
 border: 1px solid #EFEFEF;
 border-radius: 10px;
+position: relative;
+padding: 18px 36px 18px 36px;
 }
 
 .category
@@ -42,5 +44,10 @@ background-color: white;
     box-shadow: 0 0 5px 0 #949494;
 }
 
-
-
+.heart
+{
+    background-color: white;
+    position: absolute;
+    z-index :1;
+    margin-left: 6%;
+}
