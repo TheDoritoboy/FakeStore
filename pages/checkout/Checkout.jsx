@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Modal from 'react-modal';
 import axios from'axios'
-import './Checkout.css'
+import './checkout.css'
 const customStyles = {
   content: {
     top: '50%',
