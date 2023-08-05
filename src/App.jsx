@@ -8,15 +8,14 @@ import {BrowserRouter, Routes, Route,} from 'react-router-dom'
 import Details from '../pages/details/Details';
 import Contact from '../pages/contact/Contact';
 import Checkout from '../pages/checkout/Checkout';
-import header from './../componants/Header';
-import cartContextProvider from './../context/CartContext';
+import CartContextProvider from './../context/CartContext';
 Homepage
 function App() {
   const [count, setCount] = useState(0)
 
   return (
 <BrowserRouter>
-<cartContextProvider>
+<CartContextProvider>
 <Header />
 
 <Routes>
@@ -27,7 +26,7 @@ function App() {
 </Routes>
 
 <Footer />
-</cartContextProvider>
+</CartContextProvider>
 </BrowserRouter>
     
   )
