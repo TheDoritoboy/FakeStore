@@ -1,20 +1,25 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState, useContext } from 'react'
 import './ItemCard.css'
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { cartContext } from '../../context/CartContext';
 //AiOutlineHeart
 //AiFillHeart
 function ItemCard({item}) {
+const {addCart} = useContext(cartContext)
 
-  const [textState, setTextState] = useState(<AiOutlineHeart />);
+  const isCart = false;
 
-  const toggleText = () => {
-    setTextState((state) => (state === <AiFillHeart /> ? <AiOutlineHeart /> : <AiFillHeart />));
-};
+
 
 
   return (
     <div className='item-card'>
-       <button onClick={toggleText} className='heart'>{textState}</button>
+       {
+        isCart?
+        <AiOutlineHeart className='heart'/>
+        :
+        <AiFillHeart onClick={()=>addCart(item)} className='heart'/>
+       }
       <img src={item.image} alt="goods" />
       <a href= {`/details/${item.id}`} className='title'>{item.title}</a>
       <p className='category'>{item.category}</p>
