@@ -1,11 +1,12 @@
 import React, {useState, useContext } from 'react'
 import './ItemCard.css'
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { cartContext } from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 //AiOutlineHeart
 //AiFillHeart
 function ItemCard({item}) {
-const {addCart} = useContext(cartContext)
+
+//const {addCart} = useContext(CartContext)
 
   const isCart = false;
 
