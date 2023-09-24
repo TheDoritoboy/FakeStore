@@ -51,4 +51,20 @@ button
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    
+}
+
+.big-boy .categories
+{
+    font-size: xx-large;
+    display: inline;
+
+}
+
+.big-boy .categories :hover
+{
+    text-decoration: overline;
+    cursor: pointer;
+    color: #5264C3;
+
 }

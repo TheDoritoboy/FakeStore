@@ -32,7 +32,6 @@ function Homepage() {
             axios.get('https://fakestoreapi.com/products/categories')
             .then(res =>{
                 console.log(res.data)
-                //I have the categories, where do I save them?
                 setCategories(res.data)
             })
             .catch(err =>{
@@ -40,11 +39,30 @@ function Homepage() {
             })
         },[]
         )
-        //create function to get the categories
+        //create function to get the categories and  set items for onclick
         const getCategory = (category)=>{
             console.log('category is', category)
-//make an api call to get data for this category
-//once i have the data, store it in items to change what i see on the page
+            axios.get('https://fakestoreapi.com/products/category/' + category)
+            .then(res =>{
+                console.log(res.data)
+                
+                //setCategories(res.data)
+                setItems(res.data)
+                return res.data
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+        }
+       const getAll =()=>{
+            axios.get('https://fakestoreapi.com/products')
+            .then(res =>{
+                console.log(res.data)
+                setItems(res.data)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
         }
           
         //create another function to get all products
@@ -52,10 +70,9 @@ function Homepage() {
   return (
     <div className='big-boy'>
         <div className='categories'>
-            <p className='selector' href='/'>All</p>
+            <button className='selectAll' onClick={()=>getAll()}>All</button>
                {
-                categories.map((item)=><p onClick={()=>getCategory(item)}>{item}</p>)
-
+                categories.map((item)=><button className="selectCategory" onClick={()=>getCategory(item)}>{item}</button>)
 
                } 
 
